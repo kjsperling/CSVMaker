@@ -3,9 +3,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
 
-/**
- * Created by ksperling on 7/26/2016.
- */
 public class CSVMaker {
 
     //private final String delimitter = ",";
@@ -16,7 +13,7 @@ public class CSVMaker {
     public void createCSVFile(String filename,int numRows){
 
         try{
-            fileWriter = new FileWriter(filename+date.getTime()+".csv");
+            fileWriter = new FileWriter("output\\"+filename+date.getTime()+".csv");
 
             for(int x=0;x<numRows; x++){
 

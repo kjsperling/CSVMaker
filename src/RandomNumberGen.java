@@ -1,8 +1,6 @@
 import java.util.Random;
 
-/**
- * Created by ksperling on 7/26/2016.
- */
+
 public class RandomNumberGen {
 
     Random randomNum = new Random();

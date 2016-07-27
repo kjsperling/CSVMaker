@@ -1,6 +1,4 @@
-/**
- * Created by ksperling on 7/26/2016.
- */
+
 public class ClientCorp {
 
     private String name;

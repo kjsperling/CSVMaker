@@ -1,6 +1,4 @@
-/**
- * Created by ksperling on 7/26/2016.
- */
+
 public class Constants {
 
     public String[] cityStates = {"New York,New York",
