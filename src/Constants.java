@@ -51,11 +51,23 @@ public class Constants {
             "Arlington,Texas",
             "Cleveland,Ohio"};
 
-    public String businessSectors[]= {"Staffing","Public Relations","Marketing","Consulting"};
+    //public String businessSectors[]= {"Staffing","Public Relations","Marketing","Consulting"};
 
-    public String status[]={"Active","Hold","Credit Hold","Inactive"};
+    public String clientCorpStatus[]={"Active","Hold","Credit Hold","Inactive"};
+
+    public String candidateStatus[]={"New Lead","Unscreened","Available","Interviewing","Offer Pending","Placed","Unavailable","Archive"};
+
+    public String candidatePrimarySkills[]={"Coding", "Architecture","Database"};
+
+    public String educationDegree[]={"Not Specified","Associate","Bachelor","Masters","Doctoral","Post Doctoral","High School","Some College","Technical College"};
+
+    public String employeeType[]={"IC","W4","Employee"};
+
+    public String businessSectors[]={"Development","Marketing","Sales","Staffing","Support"};
 
     public String streetName[]={"Hill","Market","Farnsworth","Front", "Washington", "Walnut", "Chestnut","Broad",
             "Broadway", "Pine", "Maple","Cedar","Main","Park"};
+
+    public String categories[] = {"Angular","C++","Java"};
 
   }
