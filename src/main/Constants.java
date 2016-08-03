@@ -4,6 +4,14 @@ public class Constants {
 
     //Note: These Constants are set up for DL Technologies PL
 
+    public String camdidateIDs[]={"35526","35527","35528"};
+
+    public String clientContactIDs[]={"35533","35535","35534"};
+
+    public String clientCorpIDs[]={"1","2","3","5"};
+
+    public String jobOrderIDs[]={"1","2","3","4"};
+
     public String[] cityStates = {"New York,New York",
             "Los Angeles,California",
             "Chicago,Illinois",
@@ -75,14 +83,14 @@ public class Constants {
 
     public String employmentType[]={"Full-Time","Part-Time","Contract","Temporary"};
 
-    public String clientContactIDs[]={"35533","35535","35534"};
-
-    public String clientCorpIDs[]={"1","2","3","5"};
-
     public String source[]={"Indeed","Monster","Referral","Cold Call","Applicant","Classifieds"};
 
     public String leadType[]={"Staffing","RFP/VOR","ICAP/Flextrack"};
 
     public String leadStatus[]={"Prospective","New Lead","Active","Passive","Not Interested","Archive","Converted"};
+
+    public String opportunityType[]={"Contract","Contract to Hire","Permanent"};
+
+    public String opportunityStatus[]={"Open","Converted","Closed"};
 
   }

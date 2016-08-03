@@ -97,6 +97,31 @@ public class EntityLoader {
                 csvRow.add(lead.getType()+delimiter);
                 csvRow.add(lead.getStatus());
             }
+        }else if(entity.equalsIgnoreCase("opportunity")){
+            Opportunity opportunity = new Opportunity();
+
+            if (rowNumber==0){
+                csvRow.add(opportunity.getHeader());
+            }else {
+                csvRow.add(opportunity.getTitle()+rowNumber+delimiter);
+                csvRow.add(opportunity.getType()+delimiter);
+                csvRow.add(opportunity.getClientContactID()+delimiter);
+                csvRow.add(opportunity.getDescription()+delimiter);
+                csvRow.add(opportunity.getStatus()+delimiter);
+                csvRow.add(opportunity.getAssignedUser());
+            }
+        }else if(entity.equalsIgnoreCase("placement")){
+            Placement placement = new Placement();
+
+            if(rowNumber==0){
+                csvRow.add(placement.getHeader());
+            }else {
+                csvRow.add(placement.getJobOrderID()+delimiter);
+                csvRow.add(placement.getCandidateID()+delimiter);
+                csvRow.add(placement.getDateBegin()+delimiter);
+                csvRow.add(placement.getPayrate()+delimiter);
+                csvRow.add(placement.getEmploymentType());
+            }
         }
 
         return csvRow;

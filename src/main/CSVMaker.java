@@ -1,5 +1,6 @@
 package main;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,11 +10,15 @@ public class CSVMaker {
 
     FileWriter fileWriter = null;
     Date date = new Date();
+    File file = new File("csvOutput");
 
 
     public void createCSVFile(String filename,int numRows){
 
         try{
+            if(!file.exists()){
+                file.mkdir();
+            }
             fileWriter = new FileWriter("csvOutput\\"+filename+date.getTime()+".csv");
 
             for(int x=0;x<numRows+1; x++){
