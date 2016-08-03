@@ -1,5 +1,8 @@
+package main;
 
 public class Constants {
+
+    //Note: These Constants are set up for DL Technologies PL
 
     public String[] cityStates = {"New York,New York",
             "Los Angeles,California",
@@ -51,8 +54,6 @@ public class Constants {
             "Arlington,Texas",
             "Cleveland,Ohio"};
 
-    //public String businessSectors[]= {"Staffing","Public Relations","Marketing","Consulting"};
-
     public String clientCorpStatus[]={"Active","Hold","Credit Hold","Inactive"};
 
     public String candidateStatus[]={"New Lead","Unscreened","Available","Interviewing","Offer Pending","Placed","Unavailable","Archive"};
@@ -68,6 +69,20 @@ public class Constants {
     public String streetName[]={"Hill","Market","Farnsworth","Front", "Washington", "Walnut", "Chestnut","Broad",
             "Broadway", "Pine", "Maple","Cedar","Main","Park"};
 
-    public String categories[] = {"Angular","C++","Java"};
+    public String categories[]={"Angular","C++","Java"};
+
+    public String isOpen[]={"TRUE","FALSE"};
+
+    public String employmentType[]={"Full-Time","Part-Time","Contract","Temporary"};
+
+    public String clientContactIDs[]={"35533","35535","35534"};
+
+    public String clientCorpIDs[]={"1","2","3","5"};
+
+    public String source[]={"Indeed","Monster","Referral","Cold Call","Applicant","Classifieds"};
+
+    public String leadType[]={"Staffing","RFP/VOR","ICAP/Flextrack"};
+
+    public String leadStatus[]={"Prospective","New Lead","Active","Passive","Not Interested","Archive","Converted"};
 
   }
