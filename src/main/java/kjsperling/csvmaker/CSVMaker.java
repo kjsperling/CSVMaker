@@ -1,4 +1,4 @@
-package main;
+package kjsperling.csvmaker;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -19,12 +19,12 @@ public class CSVMaker {
             if(!file.exists()){
                 file.mkdir();
             }
-            fileWriter = new FileWriter("csvOutput\\"+filename+date.getTime()+".csv");
+            fileWriter = new FileWriter("csvOutput\\"+filename+"_"+numRows+"_"+date.getTime()+".csv");
 
             for(int x=0;x<numRows+1; x++){
 
                 EntityLoader entityLoader = new EntityLoader();
-                ArrayList<String> row = new ArrayList<>(entityLoader.loadEntityIntoList(filename,x));
+                ArrayList<String> row = new ArrayList(entityLoader.loadEntityIntoList(filename,x));
                 for(String columnContents:row){
                     fileWriter.append(columnContents);
                 }

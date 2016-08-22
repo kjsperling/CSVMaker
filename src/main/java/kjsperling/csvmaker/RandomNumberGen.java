@@ -1,4 +1,4 @@
-package main;
+package kjsperling.csvmaker;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

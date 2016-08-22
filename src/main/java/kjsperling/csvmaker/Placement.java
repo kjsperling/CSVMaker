@@ -1,5 +1,4 @@
-package main;
-
+package kjsperling.csvmaker;
 
 public class Placement {
 

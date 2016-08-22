@@ -1,14 +1,18 @@
-package main;
+package kjsperling.csvmaker;
 
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Objects;
 
 
 public class EntityLoader {
 
     public ArrayList<String> loadEntityIntoList(String entity, int rowNumber){
 
+        Date date = new Date();
+
         final String delimiter = ",";
-        ArrayList<String> csvRow = new ArrayList<>();
+        ArrayList<String> csvRow = new ArrayList();
 
         if(entity.equalsIgnoreCase("clientcorporation")){
             ClientCorp clientCorp = new ClientCorp();
@@ -27,21 +31,25 @@ public class EntityLoader {
             }
         }else if(entity.equalsIgnoreCase("candidate")){
             Candidate candidate = new Candidate();
-
+            String timestamp = Objects.toString(date.getTime());
             if(rowNumber==0){
                 csvRow.add(candidate.getHeader());
             }else {
                 csvRow.add(candidate.getFirstName()+delimiter);
-                csvRow.add(candidate.getLastName()+rowNumber+delimiter);
-                csvRow.add(candidate.getName()+rowNumber+delimiter);
+                csvRow.add(candidate.getLastName()+"_"+timestamp+"_"+rowNumber+delimiter);
+                csvRow.add(candidate.getName()+"_"+timestamp+"_"+rowNumber+delimiter);
+                csvRow.add(candidate.getAddress1()+delimiter);
+                csvRow.add(candidate.getCityState()+delimiter);
+                csvRow.add(candidate.getZip()+delimiter);
+                csvRow.add(candidate.getCountryName()+delimiter);
                 csvRow.add(candidate.getStatus()+delimiter);
                 csvRow.add(candidate.getEmail()+delimiter);
                 csvRow.add(candidate.getPhone()+delimiter);
-                csvRow.add(candidate.getPrimarySkills()+delimiter);
+//                csvRow.add(candidate.getPrimarySkills()+delimiter);
                 csvRow.add(candidate.getComments()+delimiter);
                 csvRow.add(candidate.getEducationDegree()+delimiter);
-                csvRow.add(candidate.getEmployeeType()+delimiter);
-                csvRow.add(candidate.getBusinessSectors());
+                csvRow.add(candidate.getEmployeeType());
+                //csvRow.add(candidate.getBusinessSectors());
             }
         }else if(entity.equalsIgnoreCase("clientcontact")){
             ClientContact clientContact = new ClientContact();

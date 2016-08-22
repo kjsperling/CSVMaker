@@ -1,4 +1,4 @@
-package main;
+package kjsperling.csvmaker;
 
 public class ClientCorp {
 
