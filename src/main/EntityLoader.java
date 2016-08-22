@@ -35,17 +35,29 @@ public class EntityLoader {
                 csvRow.add(candidate.getLastName()+rowNumber+delimiter);
                 csvRow.add(candidate.getName()+rowNumber+delimiter);
                 csvRow.add(candidate.getAddress1()+delimiter);
+                csvRow.add(candidate.getAddress2()+delimiter);
                 csvRow.add(candidate.getCityState()+delimiter);
                 csvRow.add(candidate.getZip()+delimiter);
                 csvRow.add(candidate.getCountryName()+delimiter);
                 csvRow.add(candidate.getStatus()+delimiter);
                 csvRow.add(candidate.getFirstName()+candidate.getLastName()+rowNumber+candidate.getEmail()+delimiter);
                 csvRow.add(candidate.getPhone()+delimiter);
-                //csvRow.add(candidate.getPrimarySkills()+delimiter);
+                csvRow.add(candidate.getMobile()+delimiter);
+                csvRow.add(candidate.getPrimarySkills()+delimiter);
                 csvRow.add(candidate.getComments()+delimiter);
                 csvRow.add(candidate.getEducationDegree()+delimiter);
-                csvRow.add(candidate.getEmployeeType());
-                //csvRow.add(candidate.getBusinessSectors());
+                csvRow.add(candidate.getEmployeeType()+delimiter);
+                //csvRow.add(candidate.getBusinessSectors()+delimiter);
+                csvRow.add(candidate.getGender()+delimiter);
+                csvRow.add(candidate.getFederalFilingStatus()+delimiter);
+                csvRow.add(candidate.getFederalExemptions()+delimiter);
+                csvRow.add(candidate.getTaxState()+delimiter);
+                csvRow.add(candidate.getStateFilingStatus()+delimiter);
+                csvRow.add(candidate.getStateExemptions()+delimiter);
+                csvRow.add(candidate.getLocalFilingStatus()+delimiter);
+                csvRow.add(candidate.getI9OnFile()+delimiter);
+                csvRow.add(candidate.getSmsOptIn()+delimiter);
+                csvRow.add(candidate.getDescription());
             }
         }else if(entity.equalsIgnoreCase("clientcontact")){
             ClientContact clientContact = new ClientContact();
