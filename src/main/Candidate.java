@@ -20,7 +20,7 @@ public class Candidate {
     private String educationDegree;
     private String employeeType;
     //private String businessSectors;
-    private String header = "firstName,lastName,name,status,email,phone,comments,educationDegree,employeeType";
+    private String header = "firstName,lastName,name,address.address1,address.city,address.state,address.zip,address.countryName,status,email,phone,comments,educationDegree,employeeType";
 
     RandomNumberGen rand = new RandomNumberGen();
     Constants constants = new Constants();

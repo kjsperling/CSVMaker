@@ -27,7 +27,7 @@ public class Lead {
         this.lastName = "Lead"+"_"+timestamp+"_";
         this.name = firstName+" "+lastName;
         this.companyName = "Lead Test Company";
-        this.email = firstName+lastName+"@example.com";
+        this.email = "@example.com";
         this.phone = rand.randString(100,999)+"-"+rand.randString(100,999)+"-"+rand.randString(1000,9999);
         this.companyURL = "www.LeadTestCompany.com";
         this.source = constants.source[rand.randInt(0,constants.source.length-1)];
