@@ -1,6 +1,9 @@
 package main;
 
 
+import java.util.Date;
+import java.util.Objects;
+
 public class Opportunity {
 
     private String title;
@@ -13,9 +16,11 @@ public class Opportunity {
 
     RandomNumberGen rand = new RandomNumberGen();
     Constants constants = new Constants();
+    Date date = new Date();
+    String timestamp = Objects.toString(date.getTime());
 
     public Opportunity() {
-        this.title = "Test Opportunity";
+        this.title = "Test Opportunity"+"_"+timestamp+"_";
         this.type = constants.opportunityType[rand.randInt(0,constants.opportunityType.length-1)];
         this.clientContactID = constants.clientContactIDs[rand.randInt(0,constants.clientContactIDs.length-1)];
         this.description = "This is an Opportunity description";

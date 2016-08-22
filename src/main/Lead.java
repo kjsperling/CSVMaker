@@ -1,5 +1,8 @@
 package main;
 
+import java.util.Date;
+import java.util.Objects;
+
 public class Lead {
 
     private String firstName;
@@ -16,13 +19,15 @@ public class Lead {
 
     RandomNumberGen rand = new RandomNumberGen();
     Constants constants = new Constants();
+    Date date = new Date();
+    String timestamp = Objects.toString(date.getTime());
 
     public Lead() {
         this.firstName = "Test";
-        this.lastName = "Lead";
+        this.lastName = "Lead"+"_"+timestamp+"_";
         this.name = firstName+" "+lastName;
         this.companyName = "Lead Test Company";
-        this.email = "@example.com";
+        this.email = firstName+lastName+"@example.com";
         this.phone = rand.randString(100,999)+"-"+rand.randString(100,999)+"-"+rand.randString(1000,9999);
         this.companyURL = "www.LeadTestCompany.com";
         this.source = constants.source[rand.randInt(0,constants.source.length-1)];

@@ -19,7 +19,7 @@ public class CSVMaker {
             if(!file.exists()){
                 file.mkdir();
             }
-            fileWriter = new FileWriter("csvOutput\\"+filename+date.getTime()+".csv");
+            fileWriter = new FileWriter("csvOutput\\"+filename+"_"+numRows+"_"+date.getTime()+".csv");
 
             for(int x=0;x<numRows+1; x++){
 

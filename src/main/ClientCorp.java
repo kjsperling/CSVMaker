@@ -1,5 +1,8 @@
 package main;
 
+import java.util.Date;
+import java.util.Objects;
+
 public class ClientCorp {
 
     private String name;
@@ -14,11 +17,13 @@ public class ClientCorp {
 
     RandomNumberGen rand = new RandomNumberGen();
     Constants constants = new Constants();
+    Date date = new Date();
+    String timestamp = Objects.toString(date.getTime());
 
 
     public ClientCorp(){
 
-        this.name = "Test Client Corp";
+        this.name = "Test Client Corp"+"_"+timestamp+"_";
         this.address1 =rand.randString(1, 999)+" "+constants.streetName[rand.randInt(0,constants.streetName.length-1)]+" Street";
         this.cityState = constants.cityStates[rand.randInt(0,constants.cityStates.length-1)];
         this.zip = rand.randString(10000,99999);

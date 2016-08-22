@@ -1,9 +1,12 @@
 package main;
 
+import java.util.Date;
+import java.util.Objects;
+
 public class JobOrder {
 
     private String title;
-    private String salery;
+    private String salary;
     private String skills;
     private String startDate;
     private String description;
@@ -20,10 +23,12 @@ public class JobOrder {
 
     RandomNumberGen rand = new RandomNumberGen();
     Constants constants = new Constants();
+    Date date = new Date();
+    String timestamp = Objects.toString(date.getTime());
 
     public JobOrder() {
-        this.title = "Test Job Order";
-        this.salery = rand.randString(10000,100000);
+        this.title = "Test Job Order"+"_"+timestamp+"_";
+        this.salary = rand.randString(10000,100000);
         this.skills = constants.candidatePrimarySkills[rand.randInt(0,constants.candidatePrimarySkills.length-1)];
         this.startDate = rand.randDate();
         this.description = "This is a Job Order Description";
@@ -42,8 +47,8 @@ public class JobOrder {
         return title;
     }
 
-    public String getSalery() {
-        return salery;
+    public String getSalary() {
+        return salary;
     }
 
     public String getSkills() {

@@ -4,7 +4,8 @@ public class Constants {
 
     //Note: These Constants are set up for DL Technologies PL
 
-    public String camdidateIDs[]={"35526","35527","35528"};
+    //ALL ENTITY ID ARRAYS MUST BE CHECKED TO ENSURE THE IDS LISTED STILL EXIST IN THE APP
+    public String candidateIDs[]={"35526","35527","35528"};
 
     public String clientContactIDs[]={"35533","35535","35534"};
 

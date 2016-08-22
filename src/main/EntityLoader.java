@@ -34,14 +34,18 @@ public class EntityLoader {
                 csvRow.add(candidate.getFirstName()+delimiter);
                 csvRow.add(candidate.getLastName()+rowNumber+delimiter);
                 csvRow.add(candidate.getName()+rowNumber+delimiter);
+                csvRow.add(candidate.getAddress1()+delimiter);
+                csvRow.add(candidate.getCityState()+delimiter);
+                csvRow.add(candidate.getZip()+delimiter);
+                csvRow.add(candidate.getCountryName()+delimiter);
                 csvRow.add(candidate.getStatus()+delimiter);
-                csvRow.add(candidate.getEmail()+delimiter);
+                csvRow.add(candidate.getFirstName()+candidate.getLastName()+rowNumber+candidate.getEmail()+delimiter);
                 csvRow.add(candidate.getPhone()+delimiter);
-                csvRow.add(candidate.getPrimarySkills()+delimiter);
+                //csvRow.add(candidate.getPrimarySkills()+delimiter);
                 csvRow.add(candidate.getComments()+delimiter);
                 csvRow.add(candidate.getEducationDegree()+delimiter);
-                csvRow.add(candidate.getEmployeeType()+delimiter);
-                csvRow.add(candidate.getBusinessSectors());
+                csvRow.add(candidate.getEmployeeType());
+                //csvRow.add(candidate.getBusinessSectors());
             }
         }else if(entity.equalsIgnoreCase("clientcontact")){
             ClientContact clientContact = new ClientContact();
@@ -52,7 +56,7 @@ public class EntityLoader {
                 csvRow.add(clientContact.getFirstName()+delimiter);
                 csvRow.add(clientContact.getLastName()+rowNumber+delimiter);
                 csvRow.add(clientContact.getName()+rowNumber+delimiter);
-                csvRow.add(clientContact.getClientCorporationName()+delimiter);
+                csvRow.add(clientContact.getClientCorporationID()+delimiter);
                 csvRow.add(clientContact.getCategoriesName()+delimiter);
                 csvRow.add(clientContact.getAddress1()+delimiter);
                 csvRow.add(clientContact.getCityState()+delimiter);
@@ -66,7 +70,7 @@ public class EntityLoader {
                 csvRow.add(jobOrder.getHeader());
             }else{
                 csvRow.add(jobOrder.getTitle()+rowNumber+delimiter);
-                csvRow.add(jobOrder.getSalery()+delimiter);
+                csvRow.add(jobOrder.getSalary()+delimiter);
                 csvRow.add(jobOrder.getSkills()+delimiter);
                 csvRow.add(jobOrder.getStartDate()+delimiter);
                 csvRow.add(jobOrder.getDescription()+delimiter);
@@ -90,7 +94,7 @@ public class EntityLoader {
                 csvRow.add(lead.getLastName()+rowNumber+delimiter);
                 csvRow.add(lead.getName()+rowNumber+delimiter);
                 csvRow.add(lead.getCompanyName()+delimiter);
-                csvRow.add(lead.getName()+rowNumber+lead.getEmail()+delimiter);
+                csvRow.add(lead.getFirstName()+lead.getLastName()+rowNumber+lead.getEmail()+delimiter);
                 csvRow.add(lead.getPhone()+delimiter);
                 csvRow.add(lead.getCompanyURL()+delimiter);
                 csvRow.add(lead.getSource()+delimiter);
