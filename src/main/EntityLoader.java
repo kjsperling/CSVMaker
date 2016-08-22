@@ -68,12 +68,19 @@ public class EntityLoader {
                 csvRow.add(clientContact.getFirstName()+delimiter);
                 csvRow.add(clientContact.getLastName()+rowNumber+delimiter);
                 csvRow.add(clientContact.getName()+rowNumber+delimiter);
+                csvRow.add(clientContact.getStatus()+delimiter);
+                csvRow.add(clientContact.getEmail()+delimiter);
+                csvRow.add(clientContact.getTitle()+delimiter);
                 csvRow.add(clientContact.getClientCorporationID()+delimiter);
-                csvRow.add(clientContact.getCategoriesName()+delimiter);
+                csvRow.add(clientContact.getPhone()+delimiter);
+                csvRow.add(clientContact.getMobile()+delimiter);
+                //csvRow.add(clientContact.getCategoriesName()+delimiter);
                 csvRow.add(clientContact.getAddress1()+delimiter);
+                csvRow.add(clientContact.getAddress2()+delimiter);
                 csvRow.add(clientContact.getCityState()+delimiter);
                 csvRow.add(clientContact.getZip()+delimiter);
-                csvRow.add(clientContact.getCountryName());
+                csvRow.add(clientContact.getCountryName()+delimiter);
+                csvRow.add(clientContact.getComments());
             }
         }else if(entity.equalsIgnoreCase("joborder")){
             JobOrder jobOrder = new JobOrder();

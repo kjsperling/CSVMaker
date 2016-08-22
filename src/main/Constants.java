@@ -67,6 +67,8 @@ public class Constants {
 
     public String candidateStatus[]={"New Lead","Unscreened","Available","Interviewing","Offer Pending","Placed","Unavailable","Archive"};
 
+    public String clientContactStatus[]={"New Lead","Active","Inactive","Archive"};
+
     public String candidatePrimarySkills[]={"Coding", "Architecture","Database"};
 
     public String educationDegree[]={"Not Specified","Associate","Bachelor","Masters","Doctoral","Post Doctoral","High School","Some College","Technical College"};
@@ -78,7 +80,7 @@ public class Constants {
     public String streetName[]={"Hill","Market","Farnsworth","Front", "Washington", "Walnut", "Chestnut","Broad",
             "Broadway", "Pine", "Maple","Cedar","Main","Park"};
 
-    public String categories[]={"Angular","C++","Java"};
+    public String categories[]={"Angular","C++","Java","Unique"};
 
     public String isOpen[]={"TRUE","FALSE"};
 
@@ -100,4 +102,5 @@ public class Constants {
 
     public String taxState[]={"AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY"};
 
+    public String contactTitle[]={"Recruiter","Manager","Auditor","Editor","Hiring Associate","Technical Recruiter","Onboarding Admin"};
   }
