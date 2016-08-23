@@ -196,6 +196,20 @@ public class EntityLoader {
                 csvRow.add(jobSubmission.getSubmissionStatus()+delimiter);
                 csvRow.add(jobSubmission.getDateAdded());
             }
+        }else if(entity.equalsIgnoreCase("note")){
+            Note note = new Note();
+
+            if(rowNumber==0){
+                csvRow.add(note.getHeader());
+            }else {
+                csvRow.add(note.getCommentingPersonName()+delimiter);
+                csvRow.add(note.getComments()+delimiter);
+                csvRow.add(note.getAction()+delimiter);
+                csvRow.add(note.getDateAdded()+delimiter);
+                csvRow.add(note.getPersonReferenceID()+delimiter);
+                csvRow.add(note.getCandidateID()+delimiter);
+                csvRow.add(note.getJobOrderID());
+            }
         }
 
         return csvRow;

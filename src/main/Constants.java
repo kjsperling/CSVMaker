@@ -121,4 +121,6 @@ public class Constants {
     public String submissionStatus[]={"Submitted","Sales Rep Rejected","Candidate Interested","Candidate Not Interested","Client Rejected","Offer Extended","Offer Rejected"};
 
     public String submissionSource[]={"Candidate Search","Job Match","External Web Site","Inbound Call"};
+
+    public String noteAction[]={"Outbound Call","Inbound Call","Left Message","Email","Appointment","Other"};
   }
