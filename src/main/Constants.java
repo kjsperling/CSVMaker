@@ -13,6 +13,8 @@ public class Constants {
 
     public String jobOrderIDs[]={"1","2","3","4"};
 
+    public String placementIDs[]={"1","2","3","4","5","18","120","1622","1624"};
+
     public String[] cityStates = {"New York,New York",
             "Los Angeles,California",
             "Chicago,Illinois",
@@ -121,4 +123,6 @@ public class Constants {
     public String submissionStatus[]={"Submitted","Sales Rep Rejected","Candidate Interested","Candidate Not Interested","Client Rejected","Offer Extended","Offer Rejected"};
 
     public String submissionSource[]={"Candidate Search","Job Match","External Web Site","Inbound Call"};
+
+    public String appointmentType[]={"Meeting","Interview","Interview in-house","Lunch","Dinner","Personal","Other"};
   }
