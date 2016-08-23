@@ -18,9 +18,17 @@ public class EntityLoader {
             }else {
                 csvRow.add(clientCorp.getName()+rowNumber+delimiter);
                 csvRow.add(clientCorp.getAddress1()+delimiter);
+                csvRow.add(clientCorp.getAddress2()+delimiter);
                 csvRow.add(clientCorp.getCityState()+delimiter);
                 csvRow.add(clientCorp.getZip()+delimiter);
                 csvRow.add(clientCorp.getCountryName()+delimiter);
+                csvRow.add(clientCorp.getParentClientCorporationID()+delimiter);
+                csvRow.add(clientCorp.getPhone()+delimiter);
+                csvRow.add(clientCorp.getFax()+delimiter);
+                csvRow.add(clientCorp.getCompanyURL()+delimiter);
+                csvRow.add(clientCorp.getNumOffices()+delimiter);
+                csvRow.add(clientCorp.getNumEmployees()+delimiter);
+                csvRow.add(clientCorp.getAnnualRevenue()+delimiter);
                 csvRow.add(clientCorp.getDescription()+delimiter);
                 csvRow.add(clientCorp.getBusinessSector()+delimiter);
                 csvRow.add(clientCorp.getStatus());
