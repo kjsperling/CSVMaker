@@ -13,6 +13,8 @@ public class Constants {
 
     public String jobOrderIDs[]={"1","2","3","4"};
 
+    public String placementIDs[]={"1","2","3","4","5","18","120","1622","1624"};
+
     public String[] cityStates = {"New York,New York",
             "Los Angeles,California",
             "Chicago,Illinois",
@@ -170,4 +172,6 @@ public class Constants {
             "Villanova University",
             "West Virginia University",
     };
+
+    public String appointmentType[]={"Meeting","Interview","Interview in-house","Lunch","Dinner","Personal","Other"};
   }

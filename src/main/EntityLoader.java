@@ -241,6 +241,24 @@ public class EntityLoader {
                 csvRow.add(candidateEducation.getGpa()+delimiter);
                 csvRow.add(candidateEducation.getDegree());
             }
+        }else if(entity.equalsIgnoreCase("appointment")){
+            Appointment appointment = new Appointment();
+
+            if(rowNumber==0){
+                csvRow.add(appointment.getHeader());
+            }else {
+                csvRow.add(appointment.getOwnerID()+delimiter);
+                csvRow.add(appointment.getContactID()+delimiter);
+                csvRow.add(appointment.getCandidateID()+delimiter);
+                csvRow.add(appointment.getJobOrderID()+delimiter);
+                csvRow.add(appointment.getPlacementID()+delimiter);
+                csvRow.add(appointment.getDateBegin()+delimiter);
+                csvRow.add(appointment.getDateEnd()+delimiter);
+                csvRow.add(appointment.getType()+delimiter);
+                csvRow.add(appointment.getSubject()+rowNumber+delimiter);
+                csvRow.add(appointment.getLocation()+delimiter);
+                csvRow.add(appointment.getDescription()+rowNumber);
+            }
         }
 
         return csvRow;
