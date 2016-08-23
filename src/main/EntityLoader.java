@@ -146,7 +146,12 @@ public class EntityLoader {
                 csvRow.add(lead.getCompanyURL()+delimiter);
                 csvRow.add(lead.getSource()+delimiter);
                 csvRow.add(lead.getType()+delimiter);
-                csvRow.add(lead.getStatus());
+                csvRow.add(lead.getStatus()+delimiter);
+                csvRow.add(lead.getAddress1()+delimiter);
+                csvRow.add(lead.getAddress2()+delimiter);
+                csvRow.add(lead.getCityState()+delimiter);
+                csvRow.add(lead.getZip()+delimiter);
+                csvRow.add(lead.getCountryName());
             }
         }else if(entity.equalsIgnoreCase("opportunity")){
             Opportunity opportunity = new Opportunity();
