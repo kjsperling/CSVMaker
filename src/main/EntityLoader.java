@@ -225,6 +225,22 @@ public class EntityLoader {
                 csvRow.add(candidateWorkHistory.getTitle()+delimiter);
                 csvRow.add(candidateWorkHistory.getComments());
             }
+        }else if(entity.equalsIgnoreCase("candidateeducation")){
+            CandidateEducation candidateEducation = new CandidateEducation();
+
+            if(rowNumber==0){
+                csvRow.add(candidateEducation.getHeader());
+            }else {
+                csvRow.add(candidateEducation.getCandidateID()+delimiter);
+                csvRow.add(candidateEducation.getStartDate()+delimiter);
+                csvRow.add(candidateEducation.getEndDate()+delimiter);
+                csvRow.add(candidateEducation.getGraduationDate()+delimiter);
+                csvRow.add(candidateEducation.getComments()+delimiter);
+                csvRow.add(candidateEducation.getSchool()+delimiter);
+                csvRow.add(candidateEducation.getCityState()+delimiter);
+                csvRow.add(candidateEducation.getGpa()+delimiter);
+                csvRow.add(candidateEducation.getDegree());
+            }
         }else if(entity.equalsIgnoreCase("appointment")){
             Appointment appointment = new Appointment();
 

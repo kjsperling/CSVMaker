@@ -125,8 +125,53 @@ public class Constants {
     public String submissionSource[]={"Candidate Search","Job Match","External Web Site","Inbound Call"};
 
     public String noteAction[]={"Outbound Call","Inbound Call","Left Message","Email","Appointment","Other"};
-    
+
     public String companyNames[]={"Bullhorn","Village Dental","Tact Medical Staffing","Wegmans Food Markets","Golden State Alarms Inc","Associated Foreign Exchange", "BB Corporation"};
+
+    public String collegeDegree[]={"Associates Degree","B.A.","B.S.","B.B.A","B.L.S","B.N.","B.S.B.A.","B.S.N.","Certificate","M.A.","M.B.A","PhD","J.D"};
+
+    public String schools[]={"Adelphi University",
+            "Ball State University",
+            "Baruch College",
+            "Bergen Community College",
+            "Berkeley College",
+            "Binghamton University",
+            "Boston University",
+            "Bowling Green State University",
+            "Brooklyn College",
+            "City University of New York",
+            "Columbia University",
+            "Cornell University",
+            "Drexel University",
+            "Fairleigh Dickinson University",
+            "Florida State University",
+            "Georgia State University",
+            "Hunter College",
+            "Ithaca College",
+            "James Madison University",
+            "Johns Hopkins University",
+            "Kent State University",
+            "LaSalle University",
+            "Liberty University",
+            "Loyola University",
+            "Millersville University",
+            "Monmouth University",
+            "Moravian College",
+            "New Jersey Institute of Technology",
+            "New York University",
+            "Notre Dame",
+            "Pace University",
+            "Rutgers University",
+            "Saint Joseph's University",
+            "St. John's University",
+            "Stanford University",
+            "Temple University",
+            "Texas A&M University",
+            "University of Chicago",
+            "University of Pennsylvania",
+            "Villanova University",
+            "West Virginia University",
+    };
 
     public String appointmentType[]={"Meeting","Interview","Interview in-house","Lunch","Dinner","Personal","Other"};
   }
