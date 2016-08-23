@@ -114,9 +114,17 @@ public class Constants {
 
     public String occupation[]={"Doctor","Lawyer","Software Developer", "QA Engineer", "Project Manager", "Tech Support","Sales","Recruiter","Pro Athlete","Race Car Driver", "Pilot","Construction Worker","Bus Driver","Train Conductor", "Barista","Taxi Driver"};
 
-    public String namePreix[]={"Mr","Ms","Mrs","Dr","Prof"};
+    public String namePrefix[]={"Mr","Ms","Mrs","Dr","Prof"};
 
     public String placementStatus[]={"Submitted","Approved","Rejected","Completed","Terminated"};
+
+    public String submissionStatus[]={"Submitted","Sales Rep Rejected","Candidate Interested","Candidate Not Interested","Client Rejected","Offer Extended","Offer Rejected"};
+
+    public String submissionSource[]={"Candidate Search","Job Match","External Web Site","Inbound Call"};
+
+    public String noteAction[]={"Outbound Call","Inbound Call","Left Message","Email","Appointment","Other"};
+
+    public String companyNames[]={"Bullhorn","Village Dental","Tact Medical Staffing","Wegmans Food Markets","Golden State Alarms Inc","Associated Foreign Exchange", "BB Corporation"};
 
     public String collegeDegree[]={"Associates Degree","B.A.","B.S.","B.B.A","B.L.S","B.N.","B.S.B.A.","B.S.N.","Certificate","M.A.","M.B.A","PhD","J.D"};
 

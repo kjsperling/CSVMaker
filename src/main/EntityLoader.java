@@ -182,6 +182,49 @@ public class EntityLoader {
                 csvRow.add(placement.getClientBillRate()+delimiter);
                 csvRow.add(placement.getHoursPerDay());
             }
+        }else if(entity.equalsIgnoreCase("jobsubmission")){
+            JobSubmission jobSubmission = new JobSubmission();
+
+            if(rowNumber==0){
+                csvRow.add(jobSubmission.getHeader());
+            }else {
+                csvRow.add(jobSubmission.getCandidateID()+delimiter);
+                csvRow.add(jobSubmission.getJobOrderID()+delimiter);
+                csvRow.add(jobSubmission.getPayRate()+delimiter);
+                csvRow.add(jobSubmission.getBillRate()+delimiter);
+                csvRow.add(jobSubmission.getSubmissionSource()+delimiter);
+                csvRow.add(jobSubmission.getSubmissionStatus()+delimiter);
+                csvRow.add(jobSubmission.getDateAdded());
+            }
+        }else if(entity.equalsIgnoreCase("note")){
+            Note note = new Note();
+
+            if(rowNumber==0){
+                csvRow.add(note.getHeader());
+            }else {
+                csvRow.add(note.getCommentingPersonName()+delimiter);
+                csvRow.add(note.getComments()+delimiter);
+                csvRow.add(note.getAction()+delimiter);
+                csvRow.add(note.getDateAdded()+delimiter);
+                csvRow.add(note.getPersonReferenceID()+delimiter);
+                csvRow.add(note.getCandidateID()+delimiter);
+                csvRow.add(note.getJobOrderID());
+            }
+        }else if(entity.equalsIgnoreCase("candidateWorkHistory")){
+            CandidateWorkHistory candidateWorkHistory = new CandidateWorkHistory();
+
+            if(rowNumber==0){
+                csvRow.add(candidateWorkHistory.getHeader());
+            }else {
+                csvRow.add(candidateWorkHistory.getCandidateID()+delimiter);
+                csvRow.add(candidateWorkHistory.getDateAdded()+delimiter);
+                csvRow.add(candidateWorkHistory.getStartDate()+delimiter);
+                csvRow.add(candidateWorkHistory.getEndDate()+delimiter);
+                csvRow.add(candidateWorkHistory.getIsLastJob()+delimiter);
+                csvRow.add(candidateWorkHistory.getCompanyName()+delimiter);
+                csvRow.add(candidateWorkHistory.getTitle()+delimiter);
+                csvRow.add(candidateWorkHistory.getComments());
+            }
         }else if(entity.equalsIgnoreCase("candidateeducation")){
             CandidateEducation candidateEducation = new CandidateEducation();
 

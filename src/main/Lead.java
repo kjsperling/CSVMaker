@@ -61,7 +61,7 @@ public class Lead {
         this.assignedTo = constants.corpUsers[rand.randInt(0,constants.corpUsers.length-1)];
         this.smsOptIn = constants.trueOrFalse[rand.randInt(0,constants.trueOrFalse.length-1)];
         this.occupation = constants.occupation[rand.randInt(0,constants.occupation.length-1)];
-        this.namePrefix = constants.namePreix[rand.randInt(0,constants.namePreix.length-1)];
+        this.namePrefix = constants.namePrefix[rand.randInt(0,constants.namePrefix.length-1)];
         this.description = "This is a Lead description";
         this.companyURL = "www.LeadTestCompany.com";
         this.source = constants.source[rand.randInt(0,constants.source.length-1)];
