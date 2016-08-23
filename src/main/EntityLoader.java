@@ -265,10 +265,11 @@ public class EntityLoader {
             if(rowNumber==0){
                 csvRow.add(sendout.getHeader());
             }else {
-                csvRow.add(sendout.getSenderID()+delimiter);
-                csvRow.add(sendout.getDateAdded()+delimiter);
-                csvRow.add(sendout.getCandidateID()+delimiter);
+                csvRow.add(sendout.getSenderID() + delimiter);
+                csvRow.add(sendout.getDateAdded() + delimiter);
+                csvRow.add(sendout.getCandidateID() + delimiter);
                 csvRow.add(sendout.getJobOrderID());
+            }
         }else if(entity.equalsIgnoreCase("candidateReference")){
             CandidateReference candidateReference = new CandidateReference();
 
