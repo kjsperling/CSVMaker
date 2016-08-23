@@ -243,6 +243,17 @@ public class EntityLoader {
                 csvRow.add(appointment.getLocation()+delimiter);
                 csvRow.add(appointment.getDescription()+rowNumber);
             }
+        }else if(entity.equalsIgnoreCase("sendout")){
+            Sendout sendout = new Sendout();
+
+            if(rowNumber==0){
+                csvRow.add(sendout.getHeader());
+            }else {
+                csvRow.add(sendout.getSenderID()+delimiter);
+                csvRow.add(sendout.getDateAdded()+delimiter);
+                csvRow.add(sendout.getCandidateID()+delimiter);
+                csvRow.add(sendout.getJobOrderID());
+            }
         }
 
         return csvRow;
