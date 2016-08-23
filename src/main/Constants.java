@@ -117,4 +117,8 @@ public class Constants {
     public String namePreix[]={"Mr","Ms","Mrs","Dr","Prof"};
 
     public String placementStatus[]={"Submitted","Approved","Rejected","Completed","Terminated"};
+
+    public String submissionStatus[]={"Submitted","Sales Rep Rejected","Candidate Interested","Candidate Not Interested","Client Rejected","Offer Extended","Offer Rejected"};
+
+    public String submissionSource[]={"Candidate Search","Job Match","External Web Site","Inbound Call"};
   }

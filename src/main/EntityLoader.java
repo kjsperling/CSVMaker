@@ -182,6 +182,20 @@ public class EntityLoader {
                 csvRow.add(placement.getClientBillRate()+delimiter);
                 csvRow.add(placement.getHoursPerDay());
             }
+        }else if(entity.equalsIgnoreCase("jobsubmission")){
+            JobSubmission jobSubmission = new JobSubmission();
+
+            if(rowNumber==0){
+                csvRow.add(jobSubmission.getHeader());
+            }else {
+                csvRow.add(jobSubmission.getCandidateID()+delimiter);
+                csvRow.add(jobSubmission.getJobOrderID()+delimiter);
+                csvRow.add(jobSubmission.getPayRate()+delimiter);
+                csvRow.add(jobSubmission.getBillRate()+delimiter);
+                csvRow.add(jobSubmission.getSubmissionSource()+delimiter);
+                csvRow.add(jobSubmission.getSubmissionStatus()+delimiter);
+                csvRow.add(jobSubmission.getDateAdded());
+            }
         }
 
         return csvRow;
