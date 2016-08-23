@@ -4,6 +4,6 @@ public class Main {
 
     public static void main(String[] args) {
         CSVMaker csvMaker = new CSVMaker();
-        csvMaker.createCSVFile("note",10);
+        csvMaker.createCSVFile("candidateWorkHistory",10);
     }
 }

@@ -1,6 +1,7 @@
 package main;
 
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Objects;
 
@@ -17,6 +18,7 @@ public class Note {
 
     RandomNumberGen rand = new RandomNumberGen();
     Constants constants = new Constants();
+    SimpleDateFormat dateFormat = new SimpleDateFormat("M/dd/yyyy");
     Date date = new Date();
     String timestamp = Objects.toString(date.getTime());
 
@@ -26,7 +28,7 @@ public class Note {
         this.candidateID = constants.candidateIDs[rand.randInt(0,constants.candidateIDs.length-1)];
         this.commentingPersonName = constants.corpUsers[rand.randInt(0,constants.corpUsers.length-1)];
         this.comments = "CSV Note " + timestamp;
-        this.dateAdded = date.toString();
+        this.dateAdded = dateFormat.format(date).toString();
         this.jobOrderID = constants.jobOrderIDs[rand.randInt(0,constants.jobOrderIDs.length-1)];
         this.personReferenceID = constants.clientContactIDs[rand.randInt(0,constants.clientContactIDs.length-1)];
 

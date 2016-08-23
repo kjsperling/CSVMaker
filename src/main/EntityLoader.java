@@ -210,6 +210,21 @@ public class EntityLoader {
                 csvRow.add(note.getCandidateID()+delimiter);
                 csvRow.add(note.getJobOrderID());
             }
+        }else if(entity.equalsIgnoreCase("candidateWorkHistory")){
+            CandidateWorkHistory candidateWorkHistory = new CandidateWorkHistory();
+
+            if(rowNumber==0){
+                csvRow.add(candidateWorkHistory.getHeader());
+            }else {
+                csvRow.add(candidateWorkHistory.getCandidateID()+delimiter);
+                csvRow.add(candidateWorkHistory.getDateAdded()+delimiter);
+                csvRow.add(candidateWorkHistory.getStartDate()+delimiter);
+                csvRow.add(candidateWorkHistory.getEndDate()+delimiter);
+                csvRow.add(candidateWorkHistory.getIsLastJob()+delimiter);
+                csvRow.add(candidateWorkHistory.getCompanyName()+delimiter);
+                csvRow.add(candidateWorkHistory.getTitle()+delimiter);
+                csvRow.add(candidateWorkHistory.getComments());
+            }
         }
 
         return csvRow;
