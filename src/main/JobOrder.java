@@ -36,10 +36,10 @@ public class JobOrder {
     public JobOrder() {
         this.title = "Test Job Order"+"_"+timestamp+"_";
         this.salary = rand.randString(10000,100000);
-        this.skills = constants.candidatePrimarySkills[rand.randInt(0,constants.candidatePrimarySkills.length-1)];
+        this.skills = constants.primarySkills[rand.randInt(0,constants.primarySkills.length-1)];
         this.startDate = rand.randDate();
         this.description = "This is a Job Order Description";
-        this.isOpen = constants.isOpen[rand.randInt(0,constants.isOpen.length-1)];
+        this.isOpen = constants.trueOrFalse[rand.randInt(0,constants.trueOrFalse.length-1)];
         this.employmentType = constants.employmentType[rand.randInt(0,constants.employmentType.length-1)];
         this.address1 = rand.randString(1, 999)+" "+constants.streetName[rand.randInt(0, constants.streetName.length-1)]+" Street";
         this.cityState = constants.cityStates[rand.randInt(0,constants.cityStates.length-1)];

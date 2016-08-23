@@ -55,7 +55,7 @@ public class Candidate {
         this.email = "@example.com";
         this.phone = rand.randString(100,999)+"-"+rand.randString(100,999)+"-"+rand.randString(1000,9999);
         this.mobile = rand.randString(100,999)+"-"+rand.randString(100,999)+"-"+rand.randString(1000,9999);
-        this.primarySkills = constants.candidatePrimarySkills[rand.randInt(0,constants.candidatePrimarySkills.length-1)];
+        this.primarySkills = constants.primarySkills[rand.randInt(0,constants.primarySkills.length-1)];
         this.comments = "This is a comment about a Candidate";
         this.educationDegree = constants.educationDegree[rand.randInt(0,constants.educationDegree.length-1)];
         this.employeeType = constants.employeeType[rand.randInt(0,constants.employeeType.length-1)];

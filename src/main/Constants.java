@@ -69,7 +69,7 @@ public class Constants {
 
     public String clientContactStatus[]={"New Lead","Active","Inactive","Archive"};
 
-    public String candidatePrimarySkills[]={"Coding", "Architecture","Database"};
+    public String primarySkills[]={"Coding", "Architecture","Database","Angular","Javascript","MadSkillz","Java"};
 
     public String educationDegree[]={"Not Specified","Associate","Bachelor","Masters","Doctoral","Post Doctoral","High School","Some College","Technical College"};
 
@@ -82,7 +82,7 @@ public class Constants {
 
     public String categories[]={"Angular","C++","Java","Unique"};
 
-    public String isOpen[]={"TRUE","FALSE"};
+    public String trueOrFalse[]={"TRUE","FALSE"};
 
     public String employmentType[]={"Full-Time","Part-Time","Contract","Temporary"};
 
@@ -107,6 +107,14 @@ public class Constants {
     public String internalUsers[]={"2","15879"};
 
     public String jobOrderStatus[]={"Accepting Candidates","Covered","Offer Out","Placed","Filled","Lost","Archive"};
+
+    public String leadPreferredContact[] = {"Email", "Phone", "Cell", "Mail", "Carrier Pigeon", "UPS", "FedEx","Bike Messenger"};
+
+    public String corpUsers[]={"Rich Bills","Don Bills"};
+
+    public String occupation[]={"Doctor","Lawyer","Software Developer", "QA Engineer", "Project Manager", "Tech Support","Sales","Recruiter","Pro Athlete","Race Car Driver", "Pilot","Construction Worker","Bus Driver","Train Conductor", "Barista","Taxi Driver"};
+
+    public String namePreix[]={"Mr","Ms","Mrs","Dr","Prof"};
 
     public String placementStatus[]={"Submitted","Approved","Rejected","Completed","Terminated"};
   }
