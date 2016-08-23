@@ -126,7 +126,7 @@ public class Constants {
 
     public String noteAction[]={"Outbound Call","Inbound Call","Left Message","Email","Appointment","Other"};
 
-    public String companyNames[]={"Bullhorn","Village Dental","Tact Medical Staffing","Wegmans Food Markets","Golden State Alarms Inc","Associated Foreign Exchange", "BB Corporation"};
+    public String companyNames[]={"Bullhorn","Village Dental","Tact Medical Staffing","Wegmans Food Markets","Golden State Alarms Inc","Associated Foreign Exchange","BB Corporation"};
 
     public String collegeDegree[]={"Associates Degree","B.A.","B.S.","B.B.A","B.L.S","B.N.","B.S.B.A.","B.S.N.","Certificate","M.A.","M.B.A","PhD","J.D"};
 
@@ -174,4 +174,9 @@ public class Constants {
     };
 
     public String appointmentType[]={"Meeting","Interview","Interview in-house","Lunch","Dinner","Personal","Other"};
+
+    public String firstNames[]={"Bob","Greg","Larry","Clarice","Emma","Noah","Olivia","Liam","Sophia","Mason","Emily","Mike","Michael","Charlotte","Harper","Isabella","James","Alex","Alexander","Ben","Benjamin","Will","William","Ethan","Jake","Jacob","Jen","Jennifer","Tom","Thomas","Tim","Timothy"};
+
+    public String lastNames[]={"Smith","Johnson","Williams","Jones","Brown","Miller","Davis","Garcia","Rodriguez","Wilson","Martinez","Anderson","Taylor","Thomas","Hernandez","Moore","Martin","Jackson","Thompson","White","Lopez","Lee","Gonzalez","Clark","Lewis","Young","Hall","Walker","Scott","King","Green","Baker","Adams"};
+
   }

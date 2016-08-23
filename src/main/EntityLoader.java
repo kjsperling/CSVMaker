@@ -269,6 +269,21 @@ public class EntityLoader {
                 csvRow.add(sendout.getDateAdded()+delimiter);
                 csvRow.add(sendout.getCandidateID()+delimiter);
                 csvRow.add(sendout.getJobOrderID());
+        }else if(entity.equalsIgnoreCase("candidateReference")){
+            CandidateReference candidateReference = new CandidateReference();
+
+            if(rowNumber==0){
+                csvRow.add(candidateReference.getHeader());
+            }else {
+                csvRow.add(candidateReference.getDateAdded()+delimiter);
+                csvRow.add(candidateReference.getReferenceFirstName()+delimiter);
+                csvRow.add(candidateReference.getReferenceLastName()+delimiter);
+                csvRow.add(candidateReference.getReferencePhone()+delimiter);
+                csvRow.add(candidateReference.getReferenceFirstName()+candidateReference.getReferenceLastName()+rowNumber+candidateReference.getReferenceEmail()+delimiter);
+                csvRow.add(candidateReference.getClientCorporationID()+delimiter);
+                csvRow.add(candidateReference.getYearsKnown()+delimiter);
+                csvRow.add(candidateReference.getEmploymentStart()+delimiter);
+                csvRow.add(candidateReference.getEmploymentEnd());
             }
         }
 
