@@ -107,4 +107,6 @@ public class Constants {
     public String internalUsers[]={"2","15879"};
 
     public String jobOrderStatus[]={"Accepting Candidates","Covered","Offer Out","Placed","Filled","Lost","Archive"};
+
+    public String placementStatus[]={"Submitted","Approved","Rejected","Completed","Terminated"};
   }

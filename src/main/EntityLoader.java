@@ -157,7 +157,11 @@ public class EntityLoader {
                 csvRow.add(placement.getCandidateID()+delimiter);
                 csvRow.add(placement.getDateBegin()+delimiter);
                 csvRow.add(placement.getPayrate()+delimiter);
-                csvRow.add(placement.getEmploymentType());
+                csvRow.add(placement.getEmploymentType()+delimiter);
+                csvRow.add(placement.getStatus()+delimiter);
+                csvRow.add(placement.getSalaryUnit()+delimiter);
+                csvRow.add(placement.getClientBillRate()+delimiter);
+                csvRow.add(placement.getHoursPerDay());
             }
         }
 
