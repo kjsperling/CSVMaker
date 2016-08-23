@@ -103,4 +103,8 @@ public class Constants {
     public String taxState[]={"AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NY","NC","ND","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY"};
 
     public String contactTitle[]={"Recruiter","Manager","Auditor","Editor","Hiring Associate","Technical Recruiter","Onboarding Admin"};
+
+    public String internalUsers[]={"2","15879"};
+
+    public String jobOrderStatus[]={"Accepting Candidates","Covered","Offer Out","Placed","Filled","Lost","Archive"};
   }

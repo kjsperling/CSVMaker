@@ -18,8 +18,15 @@ public class JobOrder {
     private String countryID;
     private String clientContactID;
     private String clientCorporationID;
+    private String OwnerID;
     private String businessSector;
-    private String header = "title,salary,skills.name,startDate,description,isOpen,employmentType,address1,address.city,address.state,address.zip,countryID,clientContact.id,clientCorporation.id,businessSectors.name";
+    private String status;
+    private Integer hoursPerWeek;
+    private Integer durationWeeks;
+    private String taxStatus;
+    private String salaryUnit;
+    private String header = "title,salary,skills.name,startDate,description,isOpen,employmentType,address.address1,address.city,address.state," +
+            "address.zip,address.countryID,clientContact.id,clientCorporation.id,owner.id,businessSectors.name,status,hoursPerWeek,durationWeeks,taxStatus,salaryUnit";
 
     RandomNumberGen rand = new RandomNumberGen();
     Constants constants = new Constants();
@@ -40,7 +47,13 @@ public class JobOrder {
         this.countryID = "1";
         this.clientContactID = constants.clientContactIDs[rand.randInt(0,constants.clientContactIDs.length-1)];
         this.clientCorporationID = constants.clientCorpIDs[rand.randInt(0,constants.clientCorpIDs.length-1)];
+        this.OwnerID = constants.internalUsers[rand.randInt(0,constants.internalUsers.length-1)];
         this.businessSector = constants.businessSectors[rand.randInt(0,constants.businessSectors.length-1)];
+        this.status = constants.jobOrderStatus[rand.randInt(0,constants.jobOrderStatus.length-1)];
+        this.hoursPerWeek = rand.randInt(1,40);
+        this.durationWeeks = rand.randInt(1,52);
+        this.taxStatus = "W2";
+        this.salaryUnit = "yearly";
     }
 
     public String getTitle() {
@@ -95,8 +108,32 @@ public class JobOrder {
         return clientCorporationID;
     }
 
+    public String getOwnerID() {
+        return OwnerID;
+    }
+
     public String getBusinessSector() {
         return businessSector;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public Integer getHoursPerWeek() {
+        return hoursPerWeek;
+    }
+
+    public Integer getDurationWeeks() {
+        return durationWeeks;
+    }
+
+    public String getTaxStatus() {
+        return taxStatus;
+    }
+
+    public String getSalaryUnit() {
+        return salaryUnit;
     }
 
     public String getHeader() {

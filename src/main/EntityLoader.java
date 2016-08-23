@@ -109,7 +109,13 @@ public class EntityLoader {
                 csvRow.add(jobOrder.getCountryID()+delimiter);
                 csvRow.add(jobOrder.getClientContactID()+delimiter);
                 csvRow.add(jobOrder.getClientCorporationID()+delimiter);
-                csvRow.add(jobOrder.getBusinessSector());
+                csvRow.add(jobOrder.getOwnerID()+delimiter);
+                csvRow.add(jobOrder.getBusinessSector()+delimiter);
+                csvRow.add(jobOrder.getStatus()+delimiter);
+                csvRow.add(jobOrder.getHoursPerWeek()+delimiter);
+                csvRow.add(jobOrder.getDurationWeeks()+delimiter);
+                csvRow.add(jobOrder.getTaxStatus()+delimiter);
+                csvRow.add(jobOrder.getSalaryUnit());
             }
         }else if(entity.equalsIgnoreCase("lead")){
             Lead lead = new Lead();
