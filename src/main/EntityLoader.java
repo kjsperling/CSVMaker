@@ -77,7 +77,7 @@ public class EntityLoader {
                 csvRow.add(clientContact.getLastName()+rowNumber+delimiter);
                 csvRow.add(clientContact.getName()+rowNumber+delimiter);
                 csvRow.add(clientContact.getStatus()+delimiter);
-                csvRow.add(clientContact.getEmail()+delimiter);
+                csvRow.add(clientContact.getFirstName()+clientContact.getLastName()+clientContact.getEmail()+delimiter);
                 csvRow.add(clientContact.getTitle()+delimiter);
                 csvRow.add(clientContact.getClientCorporationID()+delimiter);
                 csvRow.add(clientContact.getPhone()+delimiter);

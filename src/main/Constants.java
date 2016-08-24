@@ -5,13 +5,13 @@ public class Constants {
     //Note: These Constants are set up for DL Technologies PL
 
     //ALL ENTITY ID ARRAYS MUST BE CHECKED TO ENSURE THE IDS LISTED STILL EXIST IN THE APP
-    public String candidateIDs[]={"35526","35527","35528"};
+    public String candidateIDs[]={"35526","35527","35528","533627","533632","533626","533630","533631","533625","533634","533628","533633","533629"};
 
-    public String clientContactIDs[]={"35533","35535","35534"};
+    public String clientContactIDs[]={"35533","35535","35534","533646","533645","533648","533647","533650","533651","533652","533649","533653","533654"};
 
-    public String clientCorpIDs[]={"1","2","3","5"};
+    public String clientCorpIDs[]={"1","2","3","5","428","435","430","431","433","436","434","432","429","437"};
 
-    public String jobOrderIDs[]={"1","2","3","4"};
+    public String jobOrderIDs[]={"1","2","3","4","5195","5200","5201","5199","5196","5202","5203","5198","5197","5204"};
 
     public String placementIDs[]={"1","2","3","4","5","18","120","1622","1624"};
 
