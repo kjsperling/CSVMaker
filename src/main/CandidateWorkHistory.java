@@ -14,11 +14,11 @@ public class CandidateWorkHistory {
     private String isLastJob;
     private String startDate;
     private String title;
-    private String header = "candidateID, dateAdded, startDate, endDate, isLastJob, companyName, title, comments";
+    private String header = "candidate.id, dateAdded, startDate, endDate, isLastJob, companyName, title, comments";
 
     RandomNumberGen rand = new RandomNumberGen();
     Constants constants = new Constants();
-    SimpleDateFormat dateFormat = new SimpleDateFormat("M/dd/yyyy HH:mm:ss");
+    SimpleDateFormat dateFormat = new SimpleDateFormat("M/dd/yyyy HH:mm");
     Date date = new Date();
     String timestamp = Objects.toString(date.getTime());
 
@@ -26,8 +26,8 @@ public class CandidateWorkHistory {
 
         this.candidateID = constants.candidateIDs[rand.randInt(0,constants.candidateIDs.length-1)];
         this.dateAdded = dateFormat.format(date).toString();
-        this.startDate = rand.randString(1,12) + "/" + rand.randString(1,28) + "/" + rand.randString(2000,2007) + " 00:00:00";
-        this.endDate = rand.randString(1,12) + "/" + rand.randString(1,28) + "/" + rand.randString(2008,2015) + " 00:00:00";
+        this.startDate = rand.randString(1,12) + "/" + rand.randString(1,28) + "/" + rand.randString(2000,2007) + " 00:00";
+        this.endDate = rand.randString(1,12) + "/" + rand.randString(1,28) + "/" + rand.randString(2008,2015) + " 00:00";
         this.isLastJob = rand.randString(0, 1);
         this.companyName = constants.companyNames[rand.randInt(0,constants.companyNames.length-1)];
         this.title = constants.occupation[rand.randInt(0,constants.occupation.length-1)];

@@ -18,7 +18,7 @@ public class Note {
 
     RandomNumberGen rand = new RandomNumberGen();
     Constants constants = new Constants();
-    SimpleDateFormat dateFormat = new SimpleDateFormat("M/dd/yyyy");
+    SimpleDateFormat dateFormat = new SimpleDateFormat("M/dd/yyyy HH:mm");
     Date date = new Date();
     String timestamp = Objects.toString(date.getTime());
 

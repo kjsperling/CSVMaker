@@ -6,6 +6,7 @@ import java.util.Objects;
 
 public class CandidateReference {
 
+    private String candidateID;
     private String clientCorporationID;
     private String dateAdded;
     private String employmentEnd;
@@ -16,16 +17,17 @@ public class CandidateReference {
     private String referencePhone;
     private String referenceTitle;
     private String yearsKnown;
-    private String header = "dateAdded, referenceFirstName, referenceLastName, referencePhone, referenceTitle, referenceEmail, clientCorporation.id, yearsKnown, employmentStart, employmentEnd";
+    private String header = "candidate.id, dateAdded, referenceFirstName, referenceLastName, referencePhone, referenceTitle, referenceEmail, clientCorporation.id, yearsKnown, employmentStart, employmentEnd";
 
     RandomNumberGen rand = new RandomNumberGen();
     Constants constants = new Constants();
-    SimpleDateFormat dateFormat = new SimpleDateFormat("M/dd/yyyy HH:mm:ss");
+    SimpleDateFormat dateFormat = new SimpleDateFormat("M/dd/yyyy HH:mm");
     Date date = new Date();
     String timestamp = Objects.toString(date.getTime());
 
     public CandidateReference() {
 
+        this.candidateID = constants.candidateIDs[rand.randInt(0,constants.candidateIDs.length-1)];
         this.clientCorporationID = constants.clientCorpIDs[rand.randInt(0,constants.clientCorpIDs.length-1)];
         this.dateAdded = dateFormat.format(date).toString();
         this.employmentEnd = rand.randString(1,12) + "/" + rand.randString(1,28) + "/" + rand.randString(2008,2015) + " 00:00";
@@ -37,6 +39,10 @@ public class CandidateReference {
         this.referenceTitle = constants.occupation[rand.randInt(0,constants.occupation.length-1)];
         this.yearsKnown = rand.randString(1,10);
 
+    }
+
+    public String getCandidateID() {
+        return candidateID;
     }
 
     public String getClientCorporationID() {
