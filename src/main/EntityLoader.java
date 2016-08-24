@@ -164,7 +164,23 @@ public class EntityLoader {
                 csvRow.add(opportunity.getClientContactID()+delimiter);
                 csvRow.add(opportunity.getDescription()+delimiter);
                 csvRow.add(opportunity.getStatus()+delimiter);
-                csvRow.add(opportunity.getAssignedUser());
+                csvRow.add(opportunity.getAssignedUser()+delimiter);
+                csvRow.add(opportunity.getClientCorpID()+delimiter);
+                csvRow.add(opportunity.getAddress1()+delimiter);
+                csvRow.add(opportunity.getAddress2()+delimiter);
+                csvRow.add(opportunity.getCityState()+delimiter);
+                csvRow.add(opportunity.getZip()+delimiter);
+                csvRow.add(opportunity.getCountryName()+delimiter);
+                csvRow.add(opportunity.getDealValue()+delimiter);
+                csvRow.add(opportunity.getEducationDegree()+delimiter);
+                csvRow.add(opportunity.getEstimatedEndDate()+delimiter);
+                csvRow.add(opportunity.getEstimatedDuration()+delimiter);
+                csvRow.add(opportunity.getExpectedBillRate()+delimiter);
+                csvRow.add(opportunity.getExpectedFee()+delimiter);
+                csvRow.add(opportunity.getIsOpen()+delimiter);
+                csvRow.add(opportunity.getNumOpenings()+delimiter);
+                csvRow.add(opportunity.getSalary()+delimiter);
+                csvRow.add(opportunity.getWillRelocate());
             }
         }else if(entity.equalsIgnoreCase("placement")){
             Placement placement = new Placement();
