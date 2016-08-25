@@ -9,7 +9,7 @@ import java.util.Random;
 public class RandomNumberGen {
 
     Random randomNum = new Random();
-    SimpleDateFormat dateFormat = new SimpleDateFormat("M:dd:yyyy");
+    SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yy HH:mm");
     Date date = new Date();
     Calendar calendar = Calendar.getInstance();
 

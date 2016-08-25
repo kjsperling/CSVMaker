@@ -4,22 +4,18 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Date;
 
 public class CSVMaker {
 
-    FileWriter fileWriter = null;
-    Date date = new Date();
-    File file = new File("csvOutput");
-
-
-    public void createCSVFile(String filename,int numRows){
+    public void createCSVFile(String filename,int numRows,String outputDirectory){
+        FileWriter fileWriter = null;
+        File file = new File(outputDirectory);
 
         try{
             if(!file.exists()){
-                file.mkdir();
+                file.mkdirs();
             }
-            fileWriter = new FileWriter("csvOutput/"+filename+"_"+numRows+"_"+date.getTime()+".csv");
+            fileWriter = new FileWriter(outputDirectory + "/" + filename + "_" + numRows + ".csv");
 
             for(int x=0;x<numRows+1; x++){
 

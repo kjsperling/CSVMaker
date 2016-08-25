@@ -21,7 +21,7 @@ public class CandidateReference {
 
     RandomNumberGen rand = new RandomNumberGen();
     Constants constants = new Constants();
-    SimpleDateFormat dateFormat = new SimpleDateFormat("M/dd/yyyy HH:mm");
+    SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yy HH:mm");
     Date date = new Date();
     String timestamp = Objects.toString(date.getTime());
 
