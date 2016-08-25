@@ -1,4 +1,4 @@
-package main;
+package com.bullhorn.csvmaker;
 
 import java.util.ArrayList;
 
@@ -8,7 +8,7 @@ public class EntityLoader {
     public ArrayList<String> loadEntityIntoList(String entity, int rowNumber){
 
         final String delimiter = ",";
-        ArrayList<String> csvRow = new ArrayList<>();
+        ArrayList<String> csvRow = new ArrayList<String>();
 
         if(entity.equalsIgnoreCase("clientcorporation")){
             ClientCorp clientCorp = new ClientCorp();
