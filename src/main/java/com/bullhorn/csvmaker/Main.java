@@ -1,4 +1,4 @@
-package main;
+package com.bullhorn.csvmaker;
 
 public class Main {
 

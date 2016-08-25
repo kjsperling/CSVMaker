@@ -1,4 +1,4 @@
-package main;
+package com.bullhorn.csvmaker;
 
 
 import java.util.Date;
