@@ -28,7 +28,7 @@ public class RandomNumberGen {
         calendar.add(Calendar.DAY_OF_YEAR,365);
         long endDate = calendar.getTimeInMillis();
         long randomDateMilliSecs = startDate + (long)(randomNum.nextDouble()*(endDate-startDate));
-        return dateFormat.format(randomDateMilliSecs).toString().replace(":","/");
+        return dateFormat.format(randomDateMilliSecs);
     }
 
 }
