@@ -50,7 +50,7 @@ public class Opportunity {
         this.countryName = "United States";
         this.dealValue = rand.randString(10000,100000);
         this.educationDegree = constants.educationDegree[rand.randInt(0,constants.educationDegree.length-1)];
-        this.estimatedEndDate = rand.randDate()+" 00:00";
+        this.estimatedEndDate = rand.randDate();
         this.estimatedDuration = rand.randString(10,365);
         this.expectedBillRate = rand.randString(10,100);
         this.expectedFee = rand.randString(1000,50000);
